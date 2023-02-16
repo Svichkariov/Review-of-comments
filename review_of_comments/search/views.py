@@ -6,10 +6,10 @@ def home(request):
 
 
 def account(request):
-    return HttpResponse('Учетная запись')
-
-def search_for_comments(request):
     return render(request, 'login.html')
+
+# def search_for_comments(request):
+#     return render(request, 'login.html')
 
 def organization(request):
     return HttpResponse('Организация')

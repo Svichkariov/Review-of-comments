@@ -1,5 +1,5 @@
 """
-WSGI config for Review_of_comments project.
+WSGI config for review_of_comments project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Review_of_comments.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'review_of_comments.settings')
 
 application = get_wsgi_application()
