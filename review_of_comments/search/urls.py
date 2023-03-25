@@ -1,13 +1,16 @@
-from django.urls import path
+from django.urls import path, include
+from django.contrib.auth import views as auth_views
+from .views import login, home, Reg, LoginUser
+
+from django.contrib.auth.forms import AuthenticationForm
 
 
-from .views import login, registration, home, search_settings
+
 
 urlpatterns = [
-    path('', login, name='login'),
-    path('registration/', registration, name='registration'),
-    path('home/', home),
-    path('home/search_settings/', search_settings),
-    # path('search_for_comments/', search_for_comments),
-    # path('organization/', organization),
+    path('', LoginUser.as_view()),
+    path('reg/', Reg.as_view()),
+    path('home/', home, name='home'),
+
+
 ]
