@@ -1,0 +1,103 @@
+﻿{% extends 'base/base.html' %}
+{% load static %}
+{% block content %}
+<!--<div class="btn btn-default" style="padding-right: 132px; padding-bottom: 37px;">-->
+<!--                    <img src="{% static "img/onliner_logo.v3.png" %}"/>-->
+<!--                <div class="text-box" >-->
+<!--                    <p class="text-muted">интернет магазин</p>-->
+<!--                </div>-->
+<!--             </div>-->
+
+
+
+<!--                <div class="btn btn-default">-->
+<!--                            <img src="{% static "img/logo_21vek.jpg" %}"/>-->
+<!--                                <div class="text-box" >-->
+<!--                                    <p class="text-muted">онлайн-гипермаркет</p>-->
+<!--                                 </div>-->
+<!--                        </div>-->
+
+
+
+<!--			<div class="btn btn-default" style="padding-right: 132px; padding-bottom: 37px;">-->
+<!--                    <img src="{% static "img/onliner_logo.v3.png" %}"/>-->
+<!--                <div class="text-box" >-->
+<!--                    <p class="text-muted">интернет магазин</p>-->
+<!--                </div>-->
+<!--             </div>-->
+
+
+<!--                <div class="btn btn-default">-->
+<!--                            <img src="{% static "img/logo_21vek.jpg" %}"/>-->
+<!--                                <div class="text-box" >-->
+<!--                                    <p class="text-muted">онлайн-гипермаркет</p>-->
+<!--                                 </div>-->
+<!--                        </div>-->
+
+<!--                 &lt;!&ndash; /. ROW  &ndash;&gt;-->
+<!--                  <hr />-->
+
+
+<!--                    <hr />-->
+<form method="post" xmlns="http://www.w3.org/1999/html">
+        {% csrf_token %}
+                    <div class="form-group" style="margin-right: 1300px;">
+                        <label>Выберите магазин</label>
+                        <select class="form-control" name="number">
+                            <option value="1">ТехноМир</option>
+                            <option value="2">Agroup</option>
+                            <option value="3">ТТН</option>
+                            <option value="4">ELIOT</option>
+                            <option value="5">VIPCOMP</option>
+                        </select>
+                    </div>
+                    <div class="form-group" style="margin-right: 850px;margin-left: 350px;margin-top: -75px;">
+                            <label>Введите необходимое количество комментариев</label>
+                            <input class="form-control" placeholder="Например 15" name="quantity_comments"/>
+                    </div>
+                    <div class="form-group" style="margin-left: 800px;;margin-top: -73px;margin-right: 500px;">
+                            <label>Введите количество страниц поиска</label>
+                            <input class="form-control" placeholder="Например 25" name="page"/>
+                    </div>
+
+                    <hr />
+                    <div class="col-md-3 col-sm-6 col-xs-6"></div>
+                    <div class="form-group" style="margin-left: 15px;">
+                        <label style="margin-left: -380px;" >Параметры поиска:</label>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"  name="star"  value="1"/>1 звезда
+                            </label>
+                            </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="star"  value="2"/>2 звезды
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"  name="star"  value="3"/>3 звезды
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"  name="star"  value="4"/>4 звезды
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"  name="star"  value="5"/>5 звезд
+                            </label>
+                        </div>
+                        <div class="checkbox" >
+                            <label>
+                                <input type="checkbox" name="response_to_comment" value="1"/>Есть обратная связь
+                            </label>
+                        </div>
+</form>
+                        <h4 style="margin-left: 15px;">
+                            <button type="submit" class="btn btn-success">Поиск</button>
+                        </h4>
+                         </div>
+
+{% endblock content %}

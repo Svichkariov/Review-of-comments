@@ -1,11 +1,8 @@
 from django.urls import path
 
-
-from .views import *
+from .views import home, setup
 
 urlpatterns = [
-    path('', login),
-    path('home/', home),
-    # path('search_for_comments/', search_for_comments),
-    # path('organization/', organization),
+    path('', home, name='home'),
+    path('home/setup/', setup, name='setup')
 ]
