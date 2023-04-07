@@ -1,0 +1,38 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block content %}
+<h3>Ваши данные</h3>
+<form role="form">
+  <div class=" form-group input-group input-group-lg">
+  <span class="input-group-addon">name</span>
+  <input type="text" class="form-control" placeholder="Username" />
+</div>
+
+  <div class=" form-group input-group input-group-lg">
+  <span class="input-group-addon" style="padding-right: 47px;">@</span>
+  <input type="text" class="form-control" placeholder="Useremail" />
+</div>
+
+</form>
+
+
+                                        <div class="form-group">
+                                            <label>Пол</label>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked />Мужской
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"/>Женский
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <h4 style="margin-left: 15px;">
+                                            <a href="#" class="btn btn-success">Сохранить</a>
+                                        </h4>
+
+
+
+{% endblock content %}
